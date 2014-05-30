@@ -1,6 +1,6 @@
 # Betfair::Ng
 
-TODO: Write a gem description
+A client gem for interfacing with the new Betfair-(n)ext(g)eneration API
 
 ## Installation
 
@@ -18,8 +18,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'betfair-ng'
 
+Client = Betfair::Client.new('Username','s3cr3t',:uk)
+
+Client.get_account_details
+# returns a response object that has all the AccountDetailsResponse fields
+
+
+```
 ## Contributing
 
 1. Fork it ( http://github.com/<my-github-username>/betfair-ng/fork )
